@@ -1,15 +1,24 @@
 package com.hackathon;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-class TC1 {
+public class TC1 {
+	
+	private static final Logger logger = LoggerFactory.getLogger(TC1.class);
+	
 
 	@Test
-	void test() {
-		System.out.println("Hello");
-		fail("Not yet implemented");
+	public void test() {
+		
+	  	  logger.info("this is a info message");
+	      logger.warn("this is a warn message");
+	      logger.error("this is a error message");
+	      
+		//fail("Not yet implemented");
 	}
 
 }
