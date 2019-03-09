@@ -6,12 +6,15 @@
     <div style="width: 500px; border: 1px solid black; height: 100%">
         <span style="background-color: red"><b>${card.eventName}</b></span>
         <div>
-            <img src="${card.logoPath}" width="100">
+            <img src="${card.logoPath}" width="80">
             <span><b>${card.hostName}</b></span>
         </div>
         <span style="background-color: red">${card.eventDuration}</span>
         <div>
             <img src="${card.personPhoto}" height="200">
+        </div>
+         <div>
+            <img src="${card.iconPath}" height="40">
         </div>
         <div>${card.personFullName},${card.personAffilliation}, ${card.personPlace}, ${card.personCountry}</div>
         <div>Visiting Area: Ahmedabad</div>

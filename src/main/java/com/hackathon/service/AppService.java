@@ -77,6 +77,16 @@ public class AppService implements ApplicationConstants {
 			}
 			card.barcodePath = p.barcodePath;
 			card.iconPath = data.iconPath;
+			
+			if(p.groupName.equalsIgnoreCase("Volunteer"))
+			{
+				card.iconPath = data.iconPath;
+			}
+			else
+			{
+				card.iconPath = "";
+			}
+			
 			cardList.add(card);
 		}
 		
